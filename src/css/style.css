@@ -1,0 +1,16 @@
+.custom-photo-perfil img {
+    width: 150px;
+    height: 150px;
+    z-index: 9;
+}
+.custom-photo-margin {
+    margin-top: 85px;
+}
+.custom-text p {
+    margin: 5px
+}
+
+.custom-style-col {
+    height: 1px;
+    background-color: #bfbfbf6e;
+}
