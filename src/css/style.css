@@ -14,3 +14,14 @@
     height: 1px;
     background-color: #bfbfbf6e;
 }
+body {
+    background-image: url(../assets/binari.jpg);
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
