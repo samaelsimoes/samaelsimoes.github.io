@@ -3,19 +3,29 @@
     height: 150px;
     z-index: 9;
 }
-.custom-photo-margin {
-    margin-top: 85px;
+.card.custom-card {
+    background-color: #ffffff3d;
+    margin-top: 70px;
 }
-.custom-text p {
-    margin: 5px
-}
-
 .custom-style-col {
     height: 1px;
     background-color: #bfbfbf6e;
 }
+.custom-text p {
+    margin: 5px
+}
+.custom-text {
+    color: #fff;
+}
+.custom-text a {
+    color: #fff;
+}
+.custom-imagem-slick img{
+    width: auto;
+    height: 150px;
+}
 body {
-    background-image: url(../assets/binari.jpg);
+    background-color: #000!important;
     bottom: 0;
     color: black;
     left: 0;
@@ -24,4 +34,45 @@ body {
     position: absolute;
     right: 0;
     text-align: center;
+}
+.custom-img-project img{
+    width: auto;
+}
+.slick-list.draggable {
+    padding-bottom: 45px;
+}
+.custom-font i {
+    font-size: 20px;
+}
+a:hover {
+    color: #c8c8c8!important;
+}
+.canvas {
+    width: auto;
+    height: 100%;
+}
+.section {
+    position: relative;
+    display: block;
+}
+.particles-js-canvas-el {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2355px!important;
+}
+
+@media (max-width: 600px) 
+{
+    .particles-js-canvas-el {
+        height: 100%;
+    }
+}
+@media (max-width: 1000px) 
+{
+    .particles-js-canvas-el {
+        height: 100%;
+    }
 }
