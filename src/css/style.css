@@ -4,8 +4,9 @@
     z-index: 9;
 }
 .card.custom-card {
-    background-color: #ffffff3d;
+    background-color: #ffffff52;
     margin-top: 70px;
+    z-index: 99999999;
 }
 .custom-style-col {
     height: 1px;
@@ -25,14 +26,11 @@
     height: 150px;
 }
 body {
-    background-color: #000!important;
-    bottom: 0;
-    color: black;
-    left: 0;
-    overflow: auto;
-    height: 100%;
-    position: absolute;
-    right: 0;
+    color: #4f5d6e;
+    position: relative;
+    background: rgb(26, 49, 95);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(26, 49, 95, 1)), color-stop(10%, rgba(26, 49, 95, 1)), color-stop(24%, rgba(29, 108, 141, 1)), color-stop(37%, rgba(41, 136, 151, 1)), color-stop(77%, rgba(39, 45, 100, 1)), color-stop(90%, rgba(26, 49, 95, 1)), color-stop(100%, rgba(26, 49, 95, 1)));
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#1a315f', endColorstr='#1a315f', GradientType=0);
     text-align: center;
 }
 .custom-img-project img{
@@ -62,6 +60,7 @@ a:hover {
     top: 0;
     left: 0;
     height: 2355px!important;
+    z-index:99;
 }
 
 @media (max-width: 600px) 
@@ -75,4 +74,8 @@ a:hover {
     .particles-js-canvas-el {
         height: 100%;
     }
+}
+
+.container {
+    z-index: 99999;
 }
