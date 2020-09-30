@@ -1,65 +1,79 @@
-.custom-photo-perfil img {
-    width: 150px;
-    height: 150px;
-    z-index: 9;
-}
-.card.custom-card {
-    background-color: #ffffff26;
-    margin-top: 70px;
-    z-index: 99999999;
-}
-.custom-style-col {
-    height: 1px;
-    background-color: #bfbfbf6e;
-}
-.custom-text p {
-    margin: 5px
-}
-.custom-text {
-    color: #fff;
-}
-.custom-text a {
-    color: #fff;
-}
-.custom-imagem-slick img{
-    width: auto;
-    height: 150px;
-}
 body {
     color: #4f5d6e;
     position: relative;
-    background: rgb(26, 49, 95);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(26, 49, 95, 1)), color-stop(10%, rgba(26, 49, 95, 1)), color-stop(24%, rgba(29, 108, 141, 1)), color-stop(37%, rgba(41, 136, 151, 1)), color-stop(77%, rgba(39, 45, 100, 1)), color-stop(90%, rgba(26, 49, 95, 1)), color-stop(100%, rgba(26, 49, 95, 1)));
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#1a315f', endColorstr='#1a315f', GradientType=0);
     text-align: center;
 }
-.custom-img-project img{
-    width: auto;
+
+div.banner1-img{
+    width:100%;
+    height:560px;
 }
-.slick-list.draggable {
-    padding-bottom: 45px;
+
+/*.banner1-img {
+    background-image: url(/src/assets/banners/banner1.jpg);
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+} */
+
+.banner1 {
+    width:100%;
+    height:560px;
 }
-.custom-font i {
+
+.particles-js-canvas-el {
+    background: linear-gradient(to bottom, #5789ff 0%, #6200a3 76%);
+}
+
+.nav-item a{
     font-size: 20px;
 }
-a:hover {
-    color: #c8c8c8!important;
+
+.link {
+    text-decoration: none;
 }
-.canvas {
-    width: auto;
-    height: 100%;
-}
-.section {
+
+#header {
+    z-index: 9999;
+    background-color: #6e00b7cc;
     position: relative;
-    display: block;
+    width: 100%;
 }
+.logo {
+    display: flex;
+}
+
+.nav-color a {
+    color: #fff!important;
+}
+
+.padding-grid {
+    padding: 25px;
+}
+
+.menu-social {
+    z-index: 999;
+    font-size: 45px;
+    text-align: right;
+}
+
+.color-logo-whatsap {
+    color: rgb(44,205,71);
+}
+.color-logo-likedin {
+    color: rgb(0,115,177)
+}
+.color-logo-github {
+    color:#000000;
+}
+
 .particles-js-canvas-el {
     width: 100%;
     display: block;
     position: absolute;
     top: 0;
     left: 0;
-    height: 2355px!important;
     z-index:99;
 }
 
@@ -69,6 +83,7 @@ a:hover {
         height: 100%;
     }
 }
+
 @media (max-width: 1000px) 
 {
     .particles-js-canvas-el {
@@ -76,6 +91,27 @@ a:hover {
     }
 }
 
-.container {
-    z-index: 99999;
+.card.custom-card {
+    background-color: #ffffff26;
+    margin-top: 90px;
+    z-index: 99999999;
+    width: 100%;
+}
+
+.custom-text p {
+    margin: 5px
+}
+
+.custom-text {
+    color: #fff;
+}
+
+.custom-text a {
+    color: #fff;
+}
+
+.custom-photo-perfil img {
+    width: 150px;
+    height: 150px;
+    z-index: 9;
 }
