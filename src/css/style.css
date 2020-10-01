@@ -1,80 +1,85 @@
-body {
-    color: #4f5d6e;
-    position: relative;
-    text-align: center;
-}
-
-div.banner1-img{
-    width:100%;
-    height:560px;
-}
-
-/*.banner1-img {
-    background-image: url(/src/assets/banners/banner1.jpg);
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 100%;
-} */
-
-.banner1 {
-    width:100%;
-    height:560px;
-}
-
-.particles-js-canvas-el {
-    background: linear-gradient(to bottom, #5789ff 0%, #6200a3 76%);
-}
-
-.nav-item a{
-    font-size: 20px;
-}
-
-.link {
-    text-decoration: none;
-}
-
-#header {
-    z-index: 9999;
-    background-color: #6e00b7cc;
-    position: relative;
-    width: 100%;
-}
-.logo {
-    display: flex;
-}
-
-.nav-color a {
-    color: #fff!important;
-}
-
-.padding-grid {
-    padding: 25px;
-}
+/* Header*/
 
 .menu-social {
-    z-index: 999;
-    font-size: 45px;
-    text-align: right;
+    font-size: 20px;
 }
 
 .color-logo-whatsap {
     color: rgb(44,205,71);
 }
+
 .color-logo-likedin {
     color: rgb(0,115,177)
 }
+
 .color-logo-github {
     color:#000000;
+}
+
+#particles-js {
+    position: relative;
+    width: 100%;
+}
+
+#header {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    background-color: #6e00b7cc;
+    z-index: 9999;
+}
+a.nav-link {
+    color: #fff!important;
+}
+
+.contacts-social i {
+    text-decoration: none;
+    font-size: 35px;
+}
+
+.align-itens {
+    text-align: right;
+    padding: 15px;
+}
+
+.align-logo h1{
+    padding: 15px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.buttton-menu {
+    float:right
+}
+
+
+@media only screen and (max-width: 480px) {
+    .dontShowMobile {
+        display: none !important; 
+    }
+}
+
+@media only screen and (min-device-width: 800px) and (max-device-width: 1600px) {
+    .dontShowDesktop {
+        display: none !important; 
+    }
+  }
+
+
+
+/* Canvas and particles js */
+.particles-js-canvas-el {
+    background: linear-gradient(to bottom, #5789ff 0%, #6200a3 76%);
 }
 
 .particles-js-canvas-el {
     width: 100%;
     display: block;
-    position: absolute;
     top: 0;
     left: 0;
     z-index:99;
+    height: 600px!important;
 }
 
 @media (max-width: 600px) 
@@ -84,34 +89,8 @@ div.banner1-img{
     }
 }
 
-@media (max-width: 1000px) 
-{
-    .particles-js-canvas-el {
-        height: 100%;
-    }
-}
-
-.card.custom-card {
-    background-color: #ffffff26;
-    margin-top: 90px;
-    z-index: 99999999;
-    width: 100%;
-}
-
-.custom-text p {
-    margin: 5px
-}
-
-.custom-text {
-    color: #fff;
-}
-
-.custom-text a {
-    color: #fff;
-}
-
-.custom-photo-perfil img {
-    width: 150px;
-    height: 150px;
-    z-index: 9;
+/* Elements grid */
+.padding-grid {
+    padding-left: 25px;
+    padding-right: 25px;
 }
