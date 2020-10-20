@@ -1,26 +1,20 @@
 /* Header*/
-
 .menu-social {
     font-size: 25px;
 }
-
 .color-logo-whatsap {
-    color:  #ffffff5e;
+    color: #ffffff5e;
 }
-
 .color-logo-likedin {
-    color:  #ffffff5e;
+    color: #ffffff5e;
 }
-
 .color-logo-github {
     color: #ffffff5e;
 }
-
 #particles-js {
     position: relative;
     width: 100%;
 }
-
 #header {
     position: absolute;
     width: 100%;
@@ -29,70 +23,56 @@
     background: linear-gradient(to top, #4689e26e 0%, #8e393987 70%);
     z-index: 9999;
 }
-
 @media only screen and (max-width: 480px) {
     .align-itens-social {
         text-align: center!important;
         margin-top: 20px;
-    }
+   }
 }
-
 .align-itens-social {
     text-align: right;
 }
-
 .font-home {
     color: #fff!important;
     font-weight: bold;
 }
-
 a.nav-link {
     color: #fff!important;
 }
-
 .contacts-social {
     width: 100%;
 }
-
 .contacts-social i {
     text-decoration: none;
     font-size: 50px;
 }
-
 .align-itens {
     text-align: right;
     padding: 15px;
 }
-
 .align-logo h1{
     padding: 15px;
     color: #fff;
     font-size: 30px;
 }
-
 .buttton-menu {
-    float:right
+    float:right 
 }
 .buttom-menu-responsive {
     width: 65%;
     text-align: right;
 }
-
-
 nav.navbar.navbar-expand-lg.navbar-light {
     width: 80%;
 }
-
 ul.navbar-nav {
     justify-content: center !important;
     width: 100%;
 }
-
 /* Canvas and particles js */
 .particles-js-canvas-el {
     background: linear-gradient(to bottom, #4689e2 0%, #723b3b 68%);
 }
-
 .particles-js-canvas-el {
     width: 100%;
     display: block;
@@ -101,201 +81,203 @@ ul.navbar-nav {
     z-index:99;
     height: 600px!important;
 }
-
-@media (max-width: 600px) 
-{
+@media (max-width: 600px) {
     .particles-js-canvas-el {
         height: 100%;
-    }
+   }
 }
-
 /* Elements grid */
 .padding-grid {
     padding-left: 25px;
     padding-right: 25px;
 }
-
 .title {
-    margin-top: 15px;
+    margin-top: 25px;
+    padding-bottom: 25px;
     text-align: center;
-    color: #333333;
+    color: #000;
 }
 
+.title h3 {
+    text-align: center;
+    color: #000;
+}
 .works {
-    background: linear-gradient(to right, #4689e2 0%, #8e3939 73%);    text-align: center;
+    background: linear-gradient(to right, #4689e2 0%, #8e3939 73%);
+    text-align: center;
     padding-top:20px;
     padding-bottom: 20px;
-    margin-top: 20px;
 }
-
 .works i {
     font-size: 50px;
     color: #fff;
 }
-
-/*
-* Cards
-*/
-
+/* * Cards */
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
-
 .card {
-  position: relative;
-  min-width: 300px;
-  height: auto;
-  overflow: hidden;
-  border-radius: 15px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
-  transition: .5s;
+    position: relative;
+    min-width: 300px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    transition: .5s;
 }
 .card:hover {
-  transform:scale(1.1);
+    transform:scale(1.1);
 }
 .card_red, .card_red .title .fa {
-  background: linear-gradient(-45deg, #ffec61, #f321d7);
+    background: linear-gradient(-45deg, #ffec61, #f321d7);
 }
-.card_violet, .card_violet .title .fa  {
+.card_violet, .card_violet .title .fa {
     background: linear-gradient(to bottom, #4689e2 0%, #8e3939 73%);
 }
-.card_three, .card_three .title .fa  {
-  background: linear-gradient(-45deg, #24ff72, #9a4eff);
+.card_three, .card_three .title .fa {
+    background: linear-gradient(-45deg, #24ff72, #9a4eff);
 }
-
 .card:before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 40%;
-  background: rgba(255, 255, 255, .1);
-  z-index: 1;
-  transform: skewY(-5deg) scale(1.5);
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: rgba(255, 255, 255, .1);
+    z-index: 1;
+    transform: skewY(-5deg) scale(1.5);
 }
-
 .title .fa {
-  color: #fff;
-  font-size: 60px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 100px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+    color: #fff;
+    font-size: 60px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
 }
 .title h2 {
-  position: relative;
-  margin: 20px 0 0;
-  padding: 0;
-  color: #fff;
-  font-size: 28px;
-  z-index: 2;
+    position: relative;
+    margin: 20px 0 0;
+    padding: 0;
+    color: #fff;
+    font-size: 28px;
+    z-index: 2;
 }
 .price {
-  position: relative;
-  z-index: 2;
+    position: relative;
+    z-index: 2;
 }
 .price h4 {
-  margin: 0;
-  padding: 20px 0;
-  color: #fff;
-  font-size: 60px;
+    margin: 0;
+    padding: 20px 0;
+    color: #fff;
+    font-size: 60px;
 }
 .option {
-  position: relative;
-  z-index: 2;
+    position: relative;
+    z-index: 2;
 }
 .option ul {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 .option ul li {
-  margin: 0 0 10px;
-  padding: 0;
-  list-style: none;
-  color: #fff;
-  font-size: 16px;
+    margin: 0 0 10px;
+    padding: 0;
+    list-style: none;
+    color: #fff;
+    font-size: 16px;
 }
 .card a {
-  display: block;
-  position: relative;
-  z-index: 2;
-  background-color: #fff;
-  color: #262ff;
-  width: 150px;
-  height: 40px;
-  text-align: center;
-  margin: 20px auto 0;
-  line-height: 40px;
-  border-radius: 40px;
-  font-size: 16px;
-  cursor: pointer;
-  text-decoration: none;
-  box-shadow: 0 5px 10px rgba(0,0,0, .1);
+    display: block;
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    color: #262ff;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    margin: 20px auto 0;
+    line-height: 40px;
+    border-radius: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 5px 10px rgba(0,0,0, .1);
 }
 .card a:hover {
-  
 }
-/*
-* Cards
-*/
+/* * Cards */
 .margin {
     margin-top: 25px;
 }
-
 .font-icons-servicos i {
     color: #fff;
     font-size: 65px;
 }
-
 .option h8 {
     color: #fff;
     font-weight: bold;
 }
-
 .option p {
     color: #fff;
 }
-
 .margin-cards {
     padding-bottom: 15px;
 }
-
-
 @font-face {
-	font-family: Roboto;
-	src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/565097/Roboto-Regular.woff2")
-			format("woff2"),
-		url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/565097/Roboto-Regular.woff")
-			format("woff"),
-		url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/565097/Roboto-Regular.ttf")
-			format("ttf");
-	font-weight: 400;
-	font-style: normal;
+    font-family: Roboto;
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/565097/Roboto-Regular.woff2") format("woff2"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/565097/Roboto-Regular.woff") format("woff"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/565097/Roboto-Regular.ttf") format("ttf");
+    font-weight: 400;
+    font-style: normal;
 }
-
 /* The Collapsing Parallax */
 .collapsing-parallax {
-	position: fixed;
-	height: 350px;
-	width: 100%;
-	background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/565097/background.png")
-		center center no-repeat;
-	background-color: rgb(33,14,61);
-	background-size: cover;
-	z-index: 99;
+    position: fixed;
+    height: 350px;
+    width: 100%;
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/565097/background.png") center center no-repeat;
+    background-color: rgb(33,14,61);
+    background-size: cover;
+    z-index: 99;
 }
-.toolbar-collapsing-parallax{
-	height: 100%;
-	width: 100%;
+.toolbar-collapsing-parallax {
+    height: 100%;
+    width: 100%;
 }
-
 /* body content */
-header.collapsing-parallax + .site-main{
-	padding-top: 428px;
+header.collapsing-parallax + .site-main {
+    padding-top: 428px;
 }
 .site-main .inner{
-	text-align: center;
+    text-align: center;
+}
+/** CSS INFS */
+.style-inf-working h2 {
+    color: #fff;
+    font-size: 22px;
+}
+.style-inf-working i {
+    padding-bottom: 10px;
+}
+.style-inf-working h1 {
+    color: #fff;
+    font-size: 38px;
+    font-weight: bold;
+}
+.padding-inf {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.container-fluid {
+    padding-bottom: 30px;
+}
+
+.img-languagens img {
+    width: auto;
+    height: 130px;
 }

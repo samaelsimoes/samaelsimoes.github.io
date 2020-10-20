@@ -1,4 +1,20 @@
 
+window.dataLayer = window.dataLayer || [];
+
+function gtag() {
+  dataLayer.push(arguments);
+}
+
+gtag('js', new Date());
+
+gtag('config', 'UA-125858213-1');
+
+window.onload = function() {
+  $("#header").load('header.html');
+  $("#quemSomos").load('quemSomos.html');
+  $("#experiencia").load('experiencia.html');
+}
+
 particlesJS('particles-js',
   
   {
@@ -130,8 +146,8 @@ $('.slickProjects').slick({
   dots: true,
   infinite: true,
   speed: 300,
-  slidesToShow: 3,
-  slidesToScroll: 3,
+  slidesToShow: 2,
+  slidesToScroll: 2,
   responsive: [
     {
       breakpoint: 1024,
@@ -194,7 +210,7 @@ $('.slickSkillsLanguage').slick({
   dots: true,
   infinite: true,
   speed: 300,
-  slidesToShow: 4,
+  slidesToShow:4,
   slidesToScroll: 4,
   responsive: [
     {
