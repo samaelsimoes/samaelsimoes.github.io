@@ -95,7 +95,6 @@ ul.navbar-nav {
     margin-top: 25px;
     padding-bottom: 25px;
     text-align: center;
-    color: #000;
 }
 
 .title h3 {
@@ -280,4 +279,24 @@ header.collapsing-parallax + .site-main {
 .img-languagens img {
     width: auto;
     height: 130px;
+}
+
+.style-quem-somos p {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    color: #34495e;
+}
+
+.style-quem-somos h1 {
+    color: #34495e!important;
+    font-size: 53px;
+    font-family: inherit;
+    font-weight: 700;
+    line-height: 1.1;
+    color: inherit;
+}
+.style-quem-somos h3{
+    color: #34495e;
 }
