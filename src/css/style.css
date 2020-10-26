@@ -297,6 +297,73 @@ header.collapsing-parallax + .site-main {
     line-height: 1.1;
     color: inherit;
 }
+
 .style-quem-somos h3{
     color: #34495e;
+}
+
+.style-titles {
+    font-size: 30px;
+    font-family: inherit;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #375a7d!important;
+}
+
+.footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: linear-gradient(to bottom, #4689e2 0%, #723b3b 68%);
+}
+.footer2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer li{
+    color: #fff;
+    list-style-type: none;   
+}
+.footer-email a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #fff;
+}
+.footer li {
+    margin-top:20px;
+}
+
+#contact-info-widget-2 h3 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+.widget-title {
+    background: none;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+}
+
+.top-footer-block .widget-title {
+    margin: 0;
+    padding: 10px 0px;
+    line-height: 16px;
+    background: url(src/assets/signup.png) no-repeat right;
+    border-bottom: 3px solid #ef9999;
+    position: relative;
+    margin-bottom: 20px;
+    color: #5a5a5a;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.contact-details  h3 {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.contact-details span {
+    color: #fff;
+    font-size: 16px;
 }
