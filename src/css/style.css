@@ -28,6 +28,9 @@
         text-align: center!important;
         margin-top: 20px;
    }
+   aside.widget.contact-info.footer-font-menu.contact-info {
+    text-align: center;
+   }
 }
 .align-itens-social {
     text-align: right;
@@ -84,6 +87,13 @@ ul.navbar-nav {
 @media (max-width: 600px) {
     .particles-js-canvas-el {
         height: 100%;
+   }
+   aside.widget.contact-info.footer-font-menu.contact-info {
+    text-align: center;
+   }
+   .col.contact-info {
+    text-align: center;
+
    }
 }
 /* Elements grid */
@@ -333,7 +343,7 @@ header.collapsing-parallax + .site-main {
     margin-top:20px;
 }
 
-#contact-info-widget-2 h3 {
+.contact-info h3 {
     color: #fff;
     font-size: 16px;
     font-weight: 700;
@@ -366,4 +376,21 @@ header.collapsing-parallax + .site-main {
 .contact-details span {
     color: #fff;
     font-size: 16px;
+}
+
+.footer-font-menu a {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+.margin {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.margem {
+    background: #900;
+    color: #FFF;
+    padding: 1px;
+    margin: -10px;
+    margin-left: 0px;
 }

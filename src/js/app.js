@@ -1,4 +1,3 @@
-
 window.dataLayer = window.dataLayer || [];
 
 function gtag() {
@@ -9,17 +8,16 @@ gtag('js', new Date());
 
 gtag('config', 'UA-125858213-1');
 
-window.onload = function() {
+window.onload = function () {
   $("#header").load('header.html');
-  $("#quemSomos").load('quemSomos.html');
-  $("#experiencia").load('experiencia.html');
+  $("#footer").load('footer.html');
 }
 
 particlesJS('particles-js',
-  
+
   {
     "particles": {
-      "nb":80,
+      "nb": 80,
       "number": {
         "value": 80,
         "density": {
@@ -93,11 +91,11 @@ particlesJS('particles-js',
           "enable": false,
           "mode": "repulse"
         },
-         
-        "onresize" : { 
-          "permitem" :  true , 
-          "density_auto" :  true , 
-          "density_area" :  400  // nb_particles = particles.nb * (largura lona * A lona Altura / 1000) / density_area 
+
+        "onresize": {
+          "permitem": true,
+          "density_auto": true,
+          "density_area": 400  // nb_particles = particles.nb * (largura lona * A lona Altura / 1000) / density_area 
         },
         "onclick": {
           "enable": false,
@@ -210,7 +208,7 @@ $('.slickSkillsLanguage').slick({
   dots: true,
   infinite: true,
   speed: 300,
-  slidesToShow:4,
+  slidesToShow: 4,
   slidesToScroll: 4,
   responsive: [
     {
