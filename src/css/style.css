@@ -1089,3 +1089,100 @@ form {
     font-weight: 400;
     font-style: normal;
 }
+
+.contact-details h3 {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.contact-details span {
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer-font-menu a {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contact-info h3 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 480px) {
+    .align-itens-social {
+        text-align: center!important;
+        margin-top: 20px;
+    }
+    aside.widget.contact-info.footer-font-menu.contact-info {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .particles-js-canvas-el {
+        height: 100%;
+    }
+    aside.widget.contact-info.footer-font-menu.contact-info {
+        text-align: center;
+    }
+    .col.contact-info {
+        text-align: center;
+    }
+}
+
+.widget-title {
+    background: none;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+}
+
+.top-footer-block .widget-title {
+    margin: 0;
+    padding: 10px 0px;
+    line-height: 16px;
+    background: url(src/assets/signup.png) no-repeat right;
+    border-bottom: 3px solid #ef9999;
+    position: relative;
+    margin-bottom: 20px;
+    color: #5a5a5a;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.margem {
+    background: #900;
+    color: #FFF;
+    padding: 1px;
+    margin: -10px;
+    margin-left: 0px;
+}
+
+.whatsap-footer {
+    color: #fff;
+}
+
+.logo img {
+    width: 50%;
+    height: auto;
+}
+
+.contact-details i {
+    color: #fff;
+}
+
+.contact-details strong {
+    color: #fff;
+}
+
+.contact-details li {
+    list-style-type: none;
+}
+
+.footer-font-menu {
+    list-style-type: none;
+}
