@@ -345,7 +345,7 @@ header.collapsing-parallax+.site-main {
 .main_nav {
     position: fixed;
     top: 0px;
-    max-height: 50px;
+    max-height: 80px;
     z-index: 999;
     width: 100%;
     padding-top: 17px;
@@ -455,7 +455,7 @@ nav ul a:hover {
 .scroll-down {
     position: absolute;
     left: 50%;
-    bottom: 15vh;
+    bottom: 5vh;
     display: block;
     text-align: center;
     font-size: 20px;
@@ -631,7 +631,6 @@ nav ul a:hover {
 }
 
 .image {
-    background-color: #5a5a5a;
     width: 100%;
     height: auto;
     margin-left: auto;
@@ -879,7 +878,7 @@ form {
 }
 
 .block {
-    width: 70px;
+    width: 170px;
     height: 2px;
     background: #e55d87;
     /* Old browsers */
@@ -936,4 +935,254 @@ form {
     .col.contact-info {
         text-align: center;
     }
+}
+
+.services h8 {
+    font-weight: bold;
+}
+
+
+/* * Cards */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+.card {
+    position: relative;
+    min-width: 265px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    transition: .5s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card_red,
+.card_red .title .fa {
+    background: linear-gradient(-45deg, #ffec61, #f321d7);
+}
+
+.card_violet,
+.card_violet .title .fa {
+    background: linear-gradient(to bottom, #4689e2 0%, #8e3939 73%);
+}
+
+.card_three,
+.card_three .title .fa {
+    background: linear-gradient(-45deg, #24ff72, #9a4eff);
+}
+
+.card:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: rgba(255, 255, 255, .1);
+    z-index: 1;
+    transform: skewY(-5deg) scale(1.5);
+}
+
+.title .fa {
+    color: #fff;
+    font-size: 60px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+}
+
+.title h2 {
+    position: relative;
+    margin: 20px 0 0;
+    padding: 0;
+    color: #fff;
+    font-size: 28px;
+    z-index: 2;
+}
+
+.price {
+    position: relative;
+    z-index: 2;
+}
+
+.price h4 {
+    margin: 0;
+    padding: 20px 0;
+    color: #fff;
+    font-size: 60px;
+}
+
+.option {
+    position: relative;
+    z-index: 2;
+}
+
+.option ul {
+    margin: 0;
+    padding: 0;
+}
+
+.option ul li {
+    margin: 0 0 10px;
+    padding: 0;
+    list-style: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.card a {
+    display: block;
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    color: #262ff;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    margin: 20px auto 0;
+    line-height: 40px;
+    border-radius: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+.card a:hover {}
+
+
+/* * Cards */
+
+.margin {
+    margin-top: 25px;
+}
+
+.font-icons-servicos i {
+    color: #fff;
+    font-size: 65px;
+}
+
+.option h8 {
+    color: #fff;
+    font-weight: bold;
+}
+
+.option p {
+    color: #fff;
+}
+
+.margin-cards {
+    padding-bottom: 15px;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/565097/Roboto-Regular.woff2") format("woff2"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/565097/Roboto-Regular.woff") format("woff"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/565097/Roboto-Regular.ttf") format("ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contact-details h3 {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.contact-details span {
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer-font-menu a {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contact-info h3 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 480px) {
+    .align-itens-social {
+        text-align: center!important;
+        margin-top: 20px;
+    }
+    aside.widget.contact-info.footer-font-menu.contact-info {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .particles-js-canvas-el {
+        height: 100%;
+    }
+    aside.widget.contact-info.footer-font-menu.contact-info {
+        text-align: center;
+    }
+    .col.contact-info {
+        text-align: center;
+    }
+}
+
+.widget-title {
+    background: none;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+}
+
+.top-footer-block .widget-title {
+    margin: 0;
+    padding: 10px 0px;
+    line-height: 16px;
+    background: url(src/assets/signup.png) no-repeat right;
+    border-bottom: 3px solid #ef9999;
+    position: relative;
+    margin-bottom: 20px;
+    color: #5a5a5a;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.margem {
+    background: #900;
+    color: #FFF;
+    padding: 1px;
+    margin: -10px;
+    margin-left: 0px;
+}
+
+.whatsap-footer {
+    color: #fff;
+}
+
+.logo img {
+    width: 50%;
+    height: auto;
+}
+
+.contact-details i {
+    color: #fff;
+}
+
+.contact-details strong {
+    color: #fff;
+}
+
+.contact-details li {
+    list-style-type: none;
+}
+
+.footer-font-menu {
+    list-style-type: none;
 }
