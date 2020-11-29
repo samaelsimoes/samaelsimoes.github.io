@@ -1,17 +1,67 @@
-window.dataLayer = window.dataLayer || [];
+/*----------------------------------------------------*/
+/* Quote Loop
+------------------------------------------------------ */
 
-function gtag() {
-    dataLayer.push(arguments);
+function fade($ele) {
+    $ele.fadeIn(1000).delay(3000).fadeOut(1000, function() {
+        var $next = $(this).next('.quote');
+        fade($next.length > 0 ? $next : $(this).parent().children().first());
+    });
 }
+fade($('.quoteLoop > .quote').first());
 
-gtag('js', new Date());
 
-gtag('config', 'UA-125858213-1');
+/*----------------------------------------------------*/
+/* Navigation
+------------------------------------------------------ */
 
-window.onload = function() {
-    $("#header").load('header.html');
-    $("#footer").load('footer.html');
-}
+$(window).scroll(function() {
+
+    if ($(window).scrollTop() > 300) {
+        $('.main_nav').addClass('sticky');
+    } else {
+        $('.main_nav').removeClass('sticky');
+    }
+});
+
+// Mobile Navigation
+$('.mobile-toggle').click(function() {
+    if ($('.main_nav').hasClass('open-nav')) {
+        $('.main_nav').removeClass('open-nav');
+    } else {
+        $('.main_nav').addClass('open-nav');
+    }
+});
+
+$('.main_nav li a').click(function() {
+    if ($('.main_nav').hasClass('open-nav')) {
+        $('.navigation').removeClass('open-nav');
+        $('.main_nav').removeClass('open-nav');
+    }
+});
+
+
+/*----------------------------------------------------*/
+/* Smooth Scrolling
+------------------------------------------------------ */
+
+jQuery(document).ready(function($) {
+    $('.smoothscroll').on('click', function(e) {
+        e.preventDefault();
+        const offset = 0;
+        const target = this.hash;
+        if ($(this).data('offset') != undefined) offset = $(this).data('offset');
+        $('html, body').stop().animate({
+            'scrollTop': $(target).offset().top - offset
+        }, 500, 'swing', function() {
+            window.location.hash = target;
+        });
+    });
+});
+
+
+TweenMax.staggerFrom(".heading", 0.8, { opacity: 0, y: 20, delay: 0.2 }, 0.4);
+
 
 particlesJS('particles-js',
 
@@ -139,129 +189,3 @@ particlesJS('particles-js',
         }
     }
 );
-
-$('.slickProjects').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    responsive: [{
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                infinite: true,
-                dots: true
-            }
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
-    ]
-});
-$('.slickSpecialties').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 5,
-    slidesToScroll: 5,
-    responsive: [{
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 4,
-                slidesToScroll: 4,
-                infinite: true,
-                dots: true
-            }
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
-    ]
-});
-$('.slickSkillsLanguage').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    responsive: [{
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 4,
-                slidesToScroll: 4,
-                infinite: true,
-                dots: true
-            }
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
-    ]
-});
-
-$('.slickSkillsFrameworks').slick({
-    dots: true,
-    infinite: false,
-    speed: 300,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    responsive: [{
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true
-            }
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
-    ]
-});
