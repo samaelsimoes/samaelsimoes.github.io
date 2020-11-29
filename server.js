@@ -1,10 +1,10 @@
-var express         = require("express"),
-    app             = express(),
-    bodyParser      = require('body-parser'),
-    errorHandler    = require('errorhandler'),
-    methodOverride  = require('method-override'),
-    hostname        = process.env.HOSTNAME || 'localhost',
-    port            = parseInt(process.env.PORT, 10) || 8080;
+var express = require("express"),
+    app = express(),
+    bodyParser = require('body-parser'),
+    errorHandler = require('errorhandler'),
+    methodOverride = require('method-override'),
+    hostname = process.env.HOSTNAME || 'localhost',
+    port = parseInt(process.env.PORT, 10) || 8080;
 
 app.use(methodOverride());
 
@@ -21,11 +21,12 @@ app.use(errorHandler({
     showStack: true
 }));
 
-app.get("/", function (req, res) {
+app.get("/", function(req, res) {
     res.redirect("src/index.html");
+    res.redirect("src/sobre.html");
+    res.redirect("src/contato.html");
 });
 
 console.log("https://" + hostname + ":" + port);
 
 app.listen(port, hostname);
-
