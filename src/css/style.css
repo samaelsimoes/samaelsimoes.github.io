@@ -578,7 +578,7 @@ nav ul a:hover {
     background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
 }
 
-.value-00 {
+.00 {
     width: 0;
 }
 
@@ -606,16 +606,32 @@ nav ul a:hover {
     width: 60%;
 }
 
+.value-65 {
+    width: 65%;
+}
+
 .value-70 {
     width: 70%;
+}
+
+.value-76 {
+    width: 76%;
 }
 
 .value-80 {
     width: 80%;
 }
 
+.value-85 {
+    width: 85%;
+}
+
 .value-90 {
     width: 90%;
+}
+
+.value-95 {
+    width: 95%;
 }
 
 .value-100 {
@@ -947,7 +963,7 @@ form {
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
 .card {
     position: relative;
-    min-width: 265px;
+    min-width: 240px;
     height: auto;
     overflow: hidden;
     border-radius: 15px;
@@ -1185,4 +1201,19 @@ form {
 
 .footer-font-menu {
     list-style-type: none;
+}
+
+.card.card_violet.text-center {
+    height: 700px;
+}
+
+h3 {
+    font-size: 25px!important;
+}
+p {
+ font-size: 20px;
+}
+
+h8 {
+    font-size: 16px;
 }
