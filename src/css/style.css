@@ -207,3 +207,23 @@ h2{font-size:34px;letter-spacing:-1.2px}
 
 /* Keep the sticky scene on a stable compositor layer during reverse scrolling. */
 .universe-journey .hero{isolation:isolate;backface-visibility:hidden}.hero canvas{transform:translateZ(0);backface-visibility:hidden}
+
+/* More comfortable reading across desktop and mobile. */
+.nav-wrap nav{font-size:15px}.button,.text-link{font-size:15px}
+.hero-description{font-size:19px}.hero-intro{font-size:21px}
+.about-copy p,.stack-intro{font-size:16px}.about-copy .lead{font-size:22px}
+.section-heading>p{font-size:15px}.experience-card p,.services-list p,.process-grid p{font-size:15px}
+.experience-card p{min-height:165px}.tags span{font-size:11px}.card-top{font-size:11px}
+.tech-tags span{font-size:14px}.stack-groups h3{font-size:12px}
+.ai-note h3{font-size:16px}.ai-note p,.education-footnote p{font-size:14px}
+.education-list p{font-size:15px}.degree-status{font-size:12px}
+.lab-detail p{font-size:14px}.architecture-nodes small{font-size:12px}
+.section-note,.footer p{font-size:12px}.email-link{font-size:16px}
+.contact-section>div>p:not(.eyebrow){font-size:17px}
+@media(max-width:1100px){.experience-card p{min-height:90px}.nav-wrap nav{gap:12px;font-size:14px}}
+@media(max-width:700px){
+.hero-description{font-size:16px;line-height:1.75}.hero-intro{font-size:18px}
+.about-copy .lead{font-size:20px}.experience-card p{min-height:0}
+.nav-wrap nav{font-size:16px;gap:22px}.email-link{font-size:14px}
+.architecture-nodes button{padding:16px 10px}.architecture-nodes small{font-size:11px}
+}

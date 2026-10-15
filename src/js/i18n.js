@@ -14,8 +14,8 @@ Concluído|Completed
 ENGENHARIA & SOFTWARE|ENGINEERING & SOFTWARE
 Engenharia de Software|Software Engineering
 Católica de Santa Catarina|Católica de Santa Catarina
-FORMAÇÃO + EXPERIÊNCIA PRÁTICA|EDUCATION + PRACTICAL EXPERIENCE
-Uma base que acompanha minha trajetória em sistemas para saúde, finanças, setor público e indústria.|A foundation supporting my experience with systems for healthcare, finance, the public sector and industry.
+APRENDIZADO CONTÍNUO|CONTINUOUS LEARNING
+Além das graduações, tenho diversos certificados e cursos complementares. Mantenho meus conhecimentos atualizados com estudo contínuo das tecnologias utilizadas no mercado.|Alongside my degrees, I hold various certificates and have completed additional courses. I keep my knowledge current through continuous study of technologies used in the industry.
 Sobre|About
 Experiência|Experience
 Soluções|Solutions
@@ -25,7 +25,7 @@ DESENVOLVEDOR FULL-STACK · BRASIL|FULL-STACK DEVELOPER · BRAZIL
 Olá, eu sou Samael Simões.|Hi, I'm Samael Simões.
 Complexidade em código.|Complexity into code.
 Clareza na solução.|Clarity in the solution.
-Desenvolvo sistemas que conectam pessoas, processos e negócios. Da primeira conversa ao software em produção.|I build systems that connect people, processes and businesses. From the first conversation to software in production.
+Mais de 10 anos de experiência como desenvolvedor full-stack e 4 anos em desenvolvimento mobile. Construo sistemas que conectam pessoas, processos e negócios.|Over 10 years of experience as a full-stack developer and 4 years in mobile development. I build systems that connect people, processes and businesses.
 Vamos construir algo|Let's build something
 Explore minha experiência|Explore my experience
 ENGENHARIA DE SOFTWARE COM PROPÓSITO|SOFTWARE ENGINEERING WITH PURPOSE
@@ -51,9 +51,9 @@ Indústria|Industry
 Visão de negócio.|Business perspective.
 Olhar de engenheiro.|Engineering mindset.
 Entrega de ponta a ponta.|End-to-end delivery.
-Sou Samael Pereira Simões, desenvolvedor full-stack. Gosto de entender o problema antes de escolher a tecnologia.|I'm Samael Pereira Simões, a full-stack developer. I like to understand the problem before choosing the technology.
+Sou Samael Pereira Simões. Tenho mais de 10 anos de experiência como desenvolvedor full-stack e 4 anos em desenvolvimento mobile. Gosto de entender o problema antes de escolher a tecnologia.|I'm Samael Pereira Simões. I have over 10 years of experience as a full-stack developer and 4 years in mobile development. I like to understand the problem before choosing the technology.
 Minha trajetória passa por projetos governamentais, sistemas hospitalares, bancos públicos e privados e empresas do setor industrial. Contextos diferentes, com um ponto em comum: o software precisa fazer sentido para quem usa.|My experience spans government projects, hospital systems, public and private banks, and industrial companies. Different contexts with one thing in common: software needs to make sense to the people using it.
-Tenho formação em Análise e Desenvolvimento de Sistemas e Engenharia de Software. Conecto análise, desenvolvimento, dados e integrações para transformar necessidades reais em soluções sustentáveis.|I have qualifications in Systems Analysis and Development and Software Engineering. I bring together analysis, development, data and integrations to turn real needs into maintainable solutions.
+Conecto análise, desenvolvimento, dados e integrações para transformar necessidades reais em soluções sustentáveis.|I bring together analysis, development, data and integrations to turn real needs into maintainable solutions.
 Mais sobre minha trajetória no LinkedIn|More about my background on LinkedIn
 03 / EXPERIÊNCIA|03 / EXPERIENCE
 Software para cenários|Software for environments
@@ -135,6 +135,9 @@ Um olhar para a inteligência artificial|Exploring artificial intelligence
 Conhecimentos de base em IA e interesse em suas aplicações práticas no desenvolvimento e na automação de processos.|Foundational AI knowledge and an interest in its practical applications in development and process automation.
 BACK-END & INTEGRAÇÕES|BACK-END & INTEGRATIONS
 DADOS|DATA
+JOGOS & LINGUAGENS|GAMES & LANGUAGES
+2 anos em desenvolvimento de jogos|2 years in game development
+Experiência com desenvolvimento de jogos utilizando Lua, C#, C++ e Delphi, além do uso de engines de jogos.|Experience developing games with Lua, C#, C++ and Delphi, as well as working with game engines.
 NA PRÁTICA|IN PRACTICE
 Análise de requisitos|Requirements analysis
 Arquitetura de software|Software architecture
