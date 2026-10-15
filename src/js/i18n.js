@@ -14,8 +14,8 @@ Concluído|Completed
 ENGENHARIA & SOFTWARE|ENGINEERING & SOFTWARE
 Engenharia de Software|Software Engineering
 Católica de Santa Catarina|Católica de Santa Catarina
-FORMAÇÃO + EXPERIÊNCIA PRÁTICA|EDUCATION + PRACTICAL EXPERIENCE
-Uma base que acompanha minha trajetória em sistemas para saúde, finanças, setor público e indústria.|A foundation supporting my experience with systems for healthcare, finance, the public sector and industry.
+APRENDIZADO CONTÍNUO|CONTINUOUS LEARNING
+Além das graduações, tenho diversos certificados e cursos complementares. Mantenho meus conhecimentos atualizados com estudo contínuo das tecnologias utilizadas no mercado.|Alongside my degrees, I hold various certificates and have completed additional courses. I keep my knowledge current through continuous study of technologies used in the industry.
 Sobre|About
 Experiência|Experience
 Soluções|Solutions
@@ -53,7 +53,7 @@ Olhar de engenheiro.|Engineering mindset.
 Entrega de ponta a ponta.|End-to-end delivery.
 Sou Samael Pereira Simões. Tenho mais de 10 anos de experiência como desenvolvedor full-stack e 4 anos em desenvolvimento mobile. Gosto de entender o problema antes de escolher a tecnologia.|I'm Samael Pereira Simões. I have over 10 years of experience as a full-stack developer and 4 years in mobile development. I like to understand the problem before choosing the technology.
 Minha trajetória passa por projetos governamentais, sistemas hospitalares, bancos públicos e privados e empresas do setor industrial. Contextos diferentes, com um ponto em comum: o software precisa fazer sentido para quem usa.|My experience spans government projects, hospital systems, public and private banks, and industrial companies. Different contexts with one thing in common: software needs to make sense to the people using it.
-Tenho formação em Análise e Desenvolvimento de Sistemas e Engenharia de Software. Conecto análise, desenvolvimento, dados e integrações para transformar necessidades reais em soluções sustentáveis.|I have qualifications in Systems Analysis and Development and Software Engineering. I bring together analysis, development, data and integrations to turn real needs into maintainable solutions.
+Conecto análise, desenvolvimento, dados e integrações para transformar necessidades reais em soluções sustentáveis.|I bring together analysis, development, data and integrations to turn real needs into maintainable solutions.
 Mais sobre minha trajetória no LinkedIn|More about my background on LinkedIn
 03 / EXPERIÊNCIA|03 / EXPERIENCE
 Software para cenários|Software for environments
