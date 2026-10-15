@@ -16,7 +16,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build:locales": "node scripts/build-locales.js"
   },
   "keywords": [],
   "author": "",
