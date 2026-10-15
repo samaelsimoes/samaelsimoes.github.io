@@ -135,6 +135,9 @@ Um olhar para a inteligência artificial|Exploring artificial intelligence
 Conhecimentos de base em IA e interesse em suas aplicações práticas no desenvolvimento e na automação de processos.|Foundational AI knowledge and an interest in its practical applications in development and process automation.
 BACK-END & INTEGRAÇÕES|BACK-END & INTEGRATIONS
 DADOS|DATA
+JOGOS & LINGUAGENS|GAMES & LANGUAGES
+2 anos em desenvolvimento de jogos|2 years in game development
+Experiência com desenvolvimento de jogos utilizando Lua, C#, C++ e Delphi, além do uso de engines de jogos.|Experience developing games with Lua, C#, C++ and Delphi, as well as working with game engines.
 NA PRÁTICA|IN PRACTICE
 Análise de requisitos|Requirements analysis
 Arquitetura de software|Software architecture
