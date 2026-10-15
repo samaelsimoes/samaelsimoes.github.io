@@ -1,0 +1,21 @@
+// Generate a crawlable English page from the Portuguese source and its shared dictionary.
+const fs = require('fs');
+const path = require('path');
+const root = path.resolve(__dirname, '..');
+const source = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+const i18n = fs.readFileSync(path.join(root, 'src/js/i18n.js'), 'utf8');
+const entries = i18n.match(/const entries = `([\s\S]*?)`;/)[1];
+const dictionary = Object.fromEntries(entries.split('\n').map(line => { const at = line.indexOf('|'); return [line.slice(0, at), line.slice(at + 1)]; }));
+let english = source.replace(/>[^<>]+</g, text => { const key = text.slice(1, -1).trim(); return dictionary[key] ? text.replace(key, dictionary[key]) : text; });
+english = english.replace('lang="pt-BR"', 'lang="en"').replace(/(href|src)="src\//g, '$1="/src/');
+english = english.replace(/<title>.*?<\/title>/, '<title>Samael Simões | Full-Stack Developer</title>');
+english = english.replace(/(rel="canonical" href=")https:\/\/samaelsimoes.github.io\//, '$1https://samaelsimoes.github.io/en/');
+english = english.replace(/(property="og:url" content=")https:\/\/samaelsimoes.github.io\//, '$1https://samaelsimoes.github.io/en/');
+english = english.replace(/content="Samael Simões \| Desenvolvedor Full-Stack"/g, 'content="Samael Simões | Full-Stack Developer"');
+english = english.replace('property="og:locale" content="pt_BR"', 'property="og:locale" content="en_US"').replace('property="og:locale:alternate" content="en_US"', 'property="og:locale:alternate" content="pt_BR"');
+english = english.replace('content="Samael Pereira Simões, desenvolvedor full-stack. Sistemas, integrações e experiências digitais para saúde, finanças, setor público e indústria."', 'content="Samael Pereira Simões, full-stack developer. Systems and integrations for healthcare, finance, the public sector and industry."');
+english = english.replace('content="Da complexidade do negócio a um software que faz sentido. Conheça minha experiência e vamos conversar sobre seu projeto."', 'content="From business complexity to software that makes sense. Explore my experience and let’s talk about your project."');
+english = english.replace('content="Desenvolvimento de sistemas e integrações para saúde, finanças, setor público e indústria."', 'content="Systems and integrations for healthcare, finance, the public sector and industry."');
+for (const [pt,en] of Object.entries(dictionary)) english = english.replaceAll ? english.replaceAll('aria-label="'+pt+'"','aria-label="'+en+'"') : english.split('aria-label="'+pt+'"').join('aria-label="'+en+'"');
+fs.writeFileSync(path.join(root, 'en/index.html'), english);
+console.log('English page generated: en/index.html');
