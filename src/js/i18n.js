@@ -171,7 +171,8 @@ Forma das partículas|Particle shape
 Camadas da arquitetura|Architecture layers
 Exemplo ilustrativo de código|Illustrative code example
 Voltar ao início|Back to top`;
-  const english = Object.fromEntries(entries.split('\n').map(line => { const at=line.indexOf('|'); return [line.slice(0,at),line.slice(at+1)]; }));
+  const normalize = text => text.replace(/\s+/g, ' ').trim();
+  const english = Object.fromEntries(entries.split('\n').filter(line => line.includes('|')).map(line => { const at=line.indexOf('|'); return [normalize(line.slice(0,at)),line.slice(at+1).trim()]; }));
   english['const resultado = await api.enviar(dados);\ninterface.exibir(resultado);']='const result = await api.send(data);\ninterface.render(result);';
   english['POST /api/solicitacoes\nautenticar(usuario);\nvalidar(entrada);\nreturn servico.executar(entrada);']='POST /api/requests\nauthenticate(user);\nvalidate(input);\nreturn service.execute(input);';
   english['const solicitacao = validarRegras(entrada);\nawait repositorio.salvar(solicitacao);\nreturn { status: "concluido" };']='const request = validateRules(input);\nawait repository.save(request);\nreturn { status: "completed" };';
@@ -183,8 +184,8 @@ Voltar ao início|Back to top`;
   while(walker.nextNode()) {
     const node=walker.currentNode;
     if(node.parentElement.closest('script,style,[id^="layer-"]'))continue;
-    let original=node.textContent, key=original.trim();
-    if (!english[key] && reverse[key]) { const pt=reverse[key]; original=original.replace(key,pt); key=pt; }
+    let original=node.textContent, key=normalize(original);
+    if (!english[key] && reverse[key]) { const pt=reverse[key]; original=original.replace(original.trim(),pt); key=pt; }
     if(english[key]) nodes.push({node,original,key});
   }
   const labels=[...document.querySelectorAll('[aria-label]')].map(node=>({node,value:node.getAttribute('aria-label')}));
@@ -193,7 +194,7 @@ Voltar ao início|Back to top`;
   function translate(text){return language==='en'?(english[text]||text):text;}
   function setLanguage(next){
     language=next==='en'?'en':'pt-BR';document.documentElement.lang=language;
-    nodes.forEach(({node,original,key})=>{node.textContent=language==='en'?original.replace(key,english[key]):original;});
+    nodes.forEach(({node,original,key})=>{node.textContent=language==='en'?original.replace(original.trim(),english[key]):original;});
     labels.forEach(({node,value})=>node.setAttribute('aria-label',translate(reverse[value]||value)));
     document.querySelectorAll('[data-language]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.language===language)));
     document.title=language==='en'?'Samael Simões | Full-Stack Developer':'Samael Simões | Desenvolvedor Full-Stack';
@@ -213,6 +214,6 @@ Voltar ao início|Back to top`;
     document.dispatchEvent(new Event('portfolio-language'));
   }
   window.portfolioI18n={translate,setLanguage};
-  document.querySelectorAll('[data-language]').forEach(button=>button.addEventListener('click',()=>{ setLanguage(button.dataset.language); history.replaceState(null,'',button.dataset.language==='en'?'/en/':'/'); }));
+  document.querySelectorAll('[data-language]').forEach(button=>button.addEventListener('click',()=>{ setLanguage(button.dataset.language); history.replaceState(null,'',(button.dataset.language==='en'?'/en/':'/')+location.search+location.hash); }));
   setLanguage(location.pathname.startsWith('/en')?'en':'pt-BR');
 })();
