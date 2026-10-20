@@ -21,12 +21,7 @@ app.use(errorHandler({
     showStack: true
 }));
 
-app.get("/", function(req, res) {
-    res.redirect("src/index.html");
-    res.redirect("src/sobre.html");
-    res.redirect("src/contato.html");
-});
 
-console.log("https://" + hostname + ":" + port);
+console.log("http://" + hostname + ":" + port);
 
 app.listen(port, hostname);
